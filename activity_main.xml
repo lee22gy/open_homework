@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonO"
+        android:text="수식생성"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/buttonO"
+        android:layout_toRightOf="@id/textView"
+        android:backgroundTint="#ED0404" />
+
+    <Button
+        android:id="@+id/buttonO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et1"
+        android:background="#8C8787"
+        android:backgroundTint="#8A8484"
+        android:text="입력 완료"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/buttonO"
+        android:background="#958E8E"
+        android:backgroundTint="#918B8B"
+        android:text="새 수식 생성" />
+
+    <Button
+        android:id="@+id/buttone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:background="#8A8383"
+        android:backgroundTint="#918989"
+        android:text="종료" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttone"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
