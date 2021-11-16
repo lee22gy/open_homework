@@ -23,8 +23,15 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R);
 
         }
-
-
+        
+        Button btni = (Button) findViewById(R.id.buttonimage);
+        btni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,activity2.class);
+                startActivity(intent);
+            }
+        });
 
         final EditText etext;   //여기에 etext 라는ㄴ 이름의 edit text를 만들었는데   @@@@@@@@@@@
         Button btnr;
